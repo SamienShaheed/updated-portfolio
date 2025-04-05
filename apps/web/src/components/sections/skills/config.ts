@@ -2,26 +2,25 @@ import type { Skill } from "@/types/skill";
 
 const skills: Skill[] = [
   {
-    name: "Web Development",
-    // todo: use proper thumbnail pics
-    thumbnail: "/images/skills/web-development.jpg",
-    description: `Web Development involves creating websites and web applications that are both visually appealing and highly functional. It encompasses a variety of technologies, frameworks, and best practices to ensure a seamless user experience and efficient performance.`,
+    name: "Full Stack Development",
+    thumbnail: "images/skills/software-developer.jpg",
+    description: "Full Stack Development encompasses both front-end and back-end work to build robust, scalable, and user-friendly applications. It involves a wide range of technologies, frameworks, and best practices for everything from designing intuitive user interfaces to managing efficient server-side logic and databases."
   },
   {
-    name: "UI/UX Design",
-    thumbnail: "/images/skills/ui-ux-design.jpg",
-    description: `UI/UX Design focuses on creating delightful user experiences through visually appealing and highly functional designs. This skill includes a variety of technologies, frameworks, and best practices to enhance user satisfaction and usability.`,
+    name: "System Design & Architecture",
+    thumbnail: "images/skills/ui-ux-design.jpg",
+    description: "System Design & Architecture focuses on creating high-level plans for scalable, maintainable, and secure software systems. It includes analyzing requirements, choosing appropriate technologies, defining data flows, and applying best practices to ensure efficient performance and adaptability."
   },
   {
-    name: "Database Management",
-    thumbnail: "/images/skills/database-management.jpg",
-    description: `Database Management involves efficiently storing and organizing data. This skill covers a range of technologies, frameworks, and best practices to ensure data integrity, security, and performance.`,
+    name: "Database Design & Management",
+    thumbnail: "images/skills/database-management.jpg",
+    description: "Database Design & Management involves planning, creating, and maintaining databases to ensure optimal performance, security, and data integrity. It covers everything from choosing the right data models and indexing strategies to implementing backup and recovery procedures."
   },
   {
-    name: "Mobile Development",
-    thumbnail: "/images/skills/mobile-development.jpg",
-    description: `Mobile Development entails crafting apps for smartphones and tablets that are both visually appealing and highly functional. It includes a variety of technologies, frameworks, and best practices to provide a seamless user experience on mobile devices.`,
-  },
+    name: "AI Integration",
+    thumbnail: "images/skills/ai-integration.jpg",
+    description: "AI Integration involves incorporating machine learning and artificial intelligence models into software systems to enhance capabilities and automation. This skill set covers selecting and training appropriate models, implementing inference pipelines, and ensuring seamless integration with existing infrastructures."
+  }
 ];
 
 export { skills };

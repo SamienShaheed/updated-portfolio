@@ -6,7 +6,6 @@ import Link from "@/components/fancy/link";
 import ImageTrail from "@/components/fancy/motion-trail";
 import TextReveal from "@/components/fancy/text-reveal";
 import { contact } from "@/components/sections/contact/config";
-import ContactForm from "@/components/sections/contact/cozy/contact-form";
 import { experiences } from "@/components/sections/experience/config";
 import ExperienceCard from "@/components/sections/experience/cozy/experience-card";
 import { skills } from "@/components/sections/skills/config";
@@ -51,13 +50,13 @@ export default function About() {
             as="h1"
             className="leading-wide tracking-relaxed z-20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
           >
-            Innovator
+            Full Stack
           </TextReveal>
           <TextReveal
             as="h1"
             className="leading-wide tracking-relaxed z-20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
           >
-            Designer
+            Developer
           </TextReveal>
           <motion.div
             className="mt-8"
@@ -82,24 +81,18 @@ export default function About() {
                 as="h3"
                 className="font-serif text-3xl leading-tight sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
               >
-                I create captivating designs by blending aesthetics, motion, and
-                technology.
+                I bring your dream apps to life experiences.
               </TextReveal>
               <TextReveal
                 as="p"
                 className="text-muted-foreground text-base leading-relaxed sm:text-lg md:text-lg lg:text-xl xl:text-2xl"
               >
-                My journey into creativity began with a spark of curiosity about
-                how ideas could come to life on a screen. Fascinated by the
-                interplay of design and technology, I started exploring web
-                development, motion graphics, and interface design through
-                self-driven projects. With every experiment, my skills grew, and
-                what began as a hobby soon became a passion for crafting
-                meaningful digital experiences. As I honed my abilities, I
-                sought opportunities to apply them in real-world settings,
-                turning concepts into polished outcomes. Today, my approach
-                combines creativity, problem-solving, and technical expertise to
-                create work that is both functional and impactful.
+                Ever since I first wondered how tech could bring ideas to life,
+                I've been all in—exploring everything from web development to AI
+                experiments. I've built ERP apps, crafted adaptive learning
+                platforms, and even played around with AI in games and research
+                projects. I love taking on tough challenges and turning them
+                into cool, functional solutions that just work.
               </TextReveal>
               <Button asChild variant={"outline"} className="rounded-full px-6">
                 <a href="resume.pdf" target="_blank">
@@ -222,9 +215,6 @@ export default function About() {
                 </Link>
               ))}
             </div>
-          </div>
-          <div className="col-span-1 md:col-span-3">
-            <ContactForm />
           </div>
         </div>
       </section>

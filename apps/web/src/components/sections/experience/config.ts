@@ -2,32 +2,32 @@ import type { Experience } from "@/types/experience";
 
 const experiences: Experience[] = [
   {
-    name: "Web Development",
-    duration: "2022 - Present",
-    company: "Acme Inc",
+    name: "Full Stack Developer",
+    duration: "Feb 2025 - Present",
+    company: "Wavelet Solutions",
     description:
-      "Building beautiful and functional websites using modern web technologies, focusing on performance, accessibility, and SEO-friendly design.",
+      "Worked on several ERP applets for B2B clients to enhance features, fix bugs using Angular and Java Spring Boot.",
   },
   {
-    name: "UI/UX Design",
-    duration: "2021 - 2022",
-    company: "Creative Designs Ltd",
+    name: "Software Engineer Intern",
+    duration: "Oct 2024 - Jan 2025",
+    company: "Square Informatix",
     description:
-      "Creating delightful and intuitive user experiences, specializing in responsive design and user-centric methodologies.",
+      "Developed an Inventory Management System using Laravel and PHP, automating the process of warehousing and tracking warranty.",
   },
   {
-    name: "Database Management",
-    duration: "2020 - 2022",
-    company: "DataTech Solutions",
+    name: "WordPress Developer",
+    duration: "Sep 2024 - Jan 2025",
+    company: "Young Muslim Scientist",
     description:
-      "Storing and organizing data efficiently, ensuring data integrity, and optimizing database queries for high traffic applications.",
+      "Designed and Improved WordPress website using TutorLMS and Elementor plugins to create an interactive educational platform.",
   },
   {
-    name: "Mobile Development",
-    duration: "2019 - 2021",
-    company: "Innovative Apps Inc",
+    name: "Research Intern",
+    duration: "May 2022 - Sep 2022",
+    company: "University of Nottingham Malaysia",
     description:
-      "Crafting engaging and scalable apps for smartphones and tablets, focusing on cross-platform development and native performance.",
+      "Implemented Fourier Neural Operators (FNO) to improve computation time for Radio Frequency Ablation (RFA) treatment simulations.",
   },
 ];
 

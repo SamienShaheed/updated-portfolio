@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { metadata as meta } from "@/app/config";
 import { project } from "@/app/source";
@@ -39,7 +38,6 @@ export async function generateMetadata(props: {
         },
       ],
       authors: meta.author.name,
-      // modifiedTime: page.data.date.toISOString()
     },
     twitter: {
       images: [
@@ -70,13 +68,7 @@ export default async function ProjectPage(props0: {
     <main className="my-14 flex-1">
       <div className="container mx-auto">
         <Header metadata={page.data} />
-        <Image
-          src={`/images/projects/${slug}/cover.jpg`}
-          width={1280}
-          height={832}
-          alt={`Image of ${page.data.title}`}
-          className="my-12 aspect-video h-auto w-full rounded-lg object-cover"
-        />
+        {/* Removed the Image component */}
         <div className="prose min-w-full">
           <MDXContent
             code={body}

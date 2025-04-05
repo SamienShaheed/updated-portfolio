@@ -17,10 +17,13 @@ function About() {
             </h2>
             <div className="space-y-4">
               <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                I am a passionate and creative Web Developer with a love for
-                beautiful and functional websites. I have experience working
-                with a variety of web technologies and frameworks and I am
-                always eager to learn new things and take on new challenges.
+                I’m a Fullstack Engineer at Wavelet Solutions in Malaysia, where
+                I focus on building scalable ERP software solutions for
+                businesses. I have a strong background in AI and data science,
+                and published a paper on using Deep Learning for Ecoacoustic
+                analysis to help with ecosystem management. Right now, I’m
+                leading the development of a large-scale event management ERP
+                system using Angular and Spring Boot.
               </p>
               <div className="flex gap-2">
                 <Button asChild variant={"outline"}>

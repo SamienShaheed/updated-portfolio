@@ -1,10 +1,8 @@
 import type { Project } from "@/types/project";
-import Image from "next/image";
 import Link from "next/link";
 import TextReveal from "@/components/fancy/text-reveal";
 
 import { cn } from "@repo/ui";
-import { AspectRatio } from "@repo/ui/aspect-ratio";
 import { Badge } from "@repo/ui/badge";
 import { Button } from "@repo/ui/button";
 import { Card, CardContent, CardFooter } from "@repo/ui/card";
@@ -18,7 +16,6 @@ import {
 
 interface ProjectCardProps extends Project {
   href: string;
-  thumbnail: string;
   className?: string;
 }
 
@@ -26,7 +23,6 @@ function ProjectCard({
   title,
   description,
   href,
-  thumbnail,
   tags,
   className,
 }: ProjectCardProps) {
@@ -39,17 +35,6 @@ function ProjectCard({
     >
       <CardContent>
         <div className="grid gap-2">
-          <AspectRatio
-            ratio={16 / 9}
-            className="z-2 mb-2 inline-block overflow-hidden rounded-md"
-          >
-            <Image
-              src={thumbnail || "/placeholder.svg"}
-              alt={`Image of ${title}`}
-              fill
-              className="object-cover transition-transform duration-300 hover:scale-105"
-            />
-          </AspectRatio>
           <TextReveal className="text-xl font-bold" as="h1">
             {title}
           </TextReveal>

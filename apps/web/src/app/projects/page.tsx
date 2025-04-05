@@ -45,9 +45,11 @@ const jsonLd: WithContext<CollectionPage> = {
 };
 
 export default function ProjectsPage(): React.ReactElement {
-  const projects = [...project.getPages()].sort(
-    (a, b) => b.data.date.getTime() - a.data.date.getTime(),
-  );
+  const projects = [...project.getPages()].sort((a, b) => {
+    const aDate = new Date(a.data.date);
+    const bDate = new Date(b.data.date);
+    return bDate.getTime() - aDate.getTime();
+  });
 
   return (
     <main className="my-14 flex-1">
@@ -79,7 +81,6 @@ export default function ProjectsPage(): React.ReactElement {
             description={project.data.description}
             key={`project_${index}`}
             tags={project.data.tags}
-            thumbnail={`/images/projects/${project.slugs[0]}/cover.jpg`}
           />
         ))}
       </section>

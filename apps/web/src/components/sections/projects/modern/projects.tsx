@@ -14,9 +14,11 @@ import {
 import ProjectCard from "./project-card";
 
 function Projects() {
-  const projects = [...project.getPages()].sort(
-    (a, b) => b.data.date.getTime() - a.data.date.getTime(),
-  );
+  const projects = [...project.getPages()].sort((a, b) => {
+    const aDate = new Date(a.data.date);
+    const bDate = new Date(b.data.date);
+    return bDate.getTime() - aDate.getTime();
+  });
   return (
     <MotionWrap className="w-full py-24 lg:py-32" id="projects">
       <div className="px-4 md:px-6">
@@ -55,7 +57,6 @@ function Projects() {
                         href={project.url}
                         description={project.data.description}
                         tags={project.data.tags}
-                        thumbnail={`/images/projects/${project.slugs[0]}/cover.jpg`}
                       />
                     </div>
                   </CarouselItem>

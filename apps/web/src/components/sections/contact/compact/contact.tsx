@@ -7,7 +7,7 @@ import { contact } from "@/components/sections/contact/config";
 import { cn } from "@repo/ui";
 import { buttonVariants } from "@repo/ui/button";
 
-import ContactForm from "./contact-form";
+// import ContactForm from "./contact-form";
 
 function Contact() {
   return (
@@ -44,7 +44,7 @@ function Contact() {
               ))}
             </div>
           </div>
-          <ContactForm />
+          {/* <ContactForm /> */}
         </div>
       </div>
     </MotionWrap>
